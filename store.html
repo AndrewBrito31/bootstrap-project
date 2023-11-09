@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the Bootstrap file in the "css" subfolder -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Include jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Link to bootstrap.bundle.min.js file in the "js" subfolder -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Link to the CSS file in the "css" subfolder -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- Webfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>ProDental - Store</title>
+</head>
+
+<body>
+    <div class="fixed-width-container">
+        <header class="bg-secondary bg-gradient py-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/logo.jpg" alt="logo" class="navbar-logo" width="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="services.html">Services</a>
+                                <a class="dropdown-item" href="store.html">Store</a>
+                                <a class="dropdown-item" href="locations.html">Locations</a>
+                                <a class="dropdown-item" href="team.html">Our Team</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="py-2">
+                <div class="container">
+                    <h2 class="text-align-left mb-4">ProDental - Online Store</h2>
+                    <p>Explore our dental products and shop online</p>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center">
+                                <img src="images/product1.jpg" alt="Product 1" class="card-img-top" width="300" height="200">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electric Toothbrush</h5>
+                                    <p class="card-text">Price: $XX.XX</p>
+                                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#product1Modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center">
+                                <img src="images/product2.jpg" alt="Product 2" class="card-img-top" width="300" height="200">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mouth Wash</h5>
+                                    <p class="card-text">Price: $XX.XX</p>
+                                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#product2Modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center">
+                                <img src="images/product3.jpg" alt="Product 3" class="card-img-top" width="300" height="200">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bamboo Toothbrush</h5>
+                                    <p class="card-text">Price: $XX.XX</p>
+                                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#product3Modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modals for each product -->
+        <div class="modal fade" id="product1Modal" tabindex="-1" aria-labelledby="product1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product1ModalLabel">Select Quantity</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Add your quantity selection form or input here -->
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" onclick="addToCart('Electric Toothbrush')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="product2Modal" tabindex="-1" aria-labelledby="product2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product2ModalLabel">Select Quantity</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Add your quantity selection form or input here -->
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" onclick="addToCart('Mouth Wash')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="product3Modal" tabindex="-1" aria-labelledby="product3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product3ModalLabel">Select Quantity</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Add your quantity selection form or input here -->
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" onclick="addToCart('Bamboo Toothbrush')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Toast component for added to cart message -->
+        <div class="toast" id="addedToCartToast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="toast-header bg-secondary text-light">
+            <strong class="me-auto ms-2">Added to Cart</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+            <div class="toast-body">
+                Product added to your cart.
+            </div>
+        </div>
+
+        <footer class="bg-secondary bg-gradient text-light text-center py-3">
+            <h6>&copy; 2023 ProDental. All rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+
+<script>
+    // Logic to add the product to the cart
+    function addToCart(productName) {
+        // Show the toast
+        var addedToCartToast = new bootstrap.Toast(document.getElementById('addedToCartToast'));
+        addedToCartToast.show();
+
+        // Close the modal
+        $('#product1Modal, #product2Modal, #product3Modal').modal('hide');
+    }
+</script>
+
+</html>
+

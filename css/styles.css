@@ -1,0 +1,24 @@
+/* CSS Reset: Normalize default styles for all HTML elements. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Page Styling */
+.fixed-width-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #grey;
+}
+
+/* Image Container Styling For News Page */
+.image-container {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

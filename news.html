@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the Bootstrap file in the "css" subfolder -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Include jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Link to bootstrap.bundle.min.js file in the "js" subfolder -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Link to the CSS file in the "css" subfolder -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- Webfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>ProDental - News</title>
+</head>
+
+<body>
+    <div class="fixed-width-container">
+        <header class="bg-secondary bg-gradient py-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/logo.jpg" alt="logo" class="navbar-logo" width="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="services.html">Services</a>
+                                <a class="dropdown-item" href="store.html">Store</a>
+                                <a class="dropdown-item" href="locations.html">Locations</a>
+                                <a class="dropdown-item" href="team.html">Our Team</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="news" class="py-2">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <h2 class="mb-4">ProDental - News</h2>
+                        <a href="events.html" class="btn btn-secondary">See Upcoming Events</a>
+                    </div>
+                    <p class="text-align-left">Stay updated with the latest news and updates from ProDental.</p>
+                    
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/university.jpg" alt="University Image" class="img-fluid image-container">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title">ProDental Establishes Research Protocol with Local University</h3>
+                                    <p class="card-text">ProDental is excited to announce a new research collaboration with DentUni. This partnership will enable us to advance our dental technologies and improve patient care through cutting-edge research and innovation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/laboratory.jpg" alt="Laboratory Image" class="img-fluid image-container">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title">ProDental Acquires State-of-the-Art Dental Laboratory</h3>
+                                    <p class="card-text">ProDental is pleased to share our recent acquisition of DentaLabs, a leading dental laboratory known for its excellence in prosthetics and dental solutions. This strategic move strengthens our commitment to delivering top-quality dental services to our patients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <img src="images/conference.jpg" alt="Dentist Fair Image" class="img-fluid image-container">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title">ProDental Exhibits at Europe's Premier Dentist Conference</h3>
+                                    <p class="card-text">We are thrilled to announce our participation in Europe's most prestigious dental Conference, DentalSummit. At this event, ProDental will showcase the latest advancements in dentistry, including our innovative dental technologies and services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-secondary bg-gradient text-light text-center py-3">
+            <h6>&copy; 2023 ProDental. All rights reserved.</h6>
+        </footer>
+    </div>
+</body>
+
+</html>
